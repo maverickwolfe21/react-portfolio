@@ -14,7 +14,7 @@ import ErrorPage from "./error-page";
 import AboutMe from "./components/AboutMe";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+import Portfolio from "./components/Portfolio";
 
 // React Router
 const router = createBrowserRouter([
@@ -40,8 +40,8 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/projects",
-        element: <Projects />,
+        path: "/portfolio",
+        element: <Portfolio />,
       },
     ],
   },

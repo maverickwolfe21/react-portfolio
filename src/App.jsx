@@ -8,7 +8,7 @@ export default function App() {
     <div className="flex flex-col items-center">
       <Header />
 
-      <div>
+      <div className="mt-20">
         <Outlet />
       </div>
 
