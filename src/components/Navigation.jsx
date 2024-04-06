@@ -18,7 +18,9 @@ const Navigation = () => {
   return (
     <div className="w-screen flex justify-center">
       <div className="flex w-4/5 p-5 items-center justify-between border-2 border-black bg-transparent text-black gap-5">
-        <div className="text-2xl">Maverick Wolfe</div>
+        <Link to={"/about"} className="text-2xl">
+          Maverick Wolfe
+        </Link>
         <div className="flex gap-4">
           {routes.map((r) => (
             <Link to={r.link} className={pathname.includes(r.link) ? "underline underline-offset-2" : "hover:underline underline-offset-2"}>
