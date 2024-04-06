@@ -56,6 +56,10 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
   return (
     <div>
@@ -103,7 +107,9 @@ const Contact = () => {
           />
           {messageError && <p className="text-red-600">{messageError}</p>}
         </div>
-        <button className="border-2 border-black rounded-md bg-transparent text-black p-1">Send</button>
+        <button type="submit" className="border-2 border-black rounded-md bg-transparent text-black p-1">
+          Send
+        </button>
       </form>
     </div>
   );
